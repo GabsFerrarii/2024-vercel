@@ -1,38 +1,44 @@
+<!doctype html>
 <html>
-  <head>
-    <title>Infoweb 2024 - Tarefas</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
+<head>
+  <title>Infoweb 2024 - Tarefas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
   <body>
-    <div>
-      <div>
-        <h1>Lista de tarefas</h1>
-      </div>
-      <div>
-        <input type="text" placeholder="informe a tarefa" />
-        <button>Adicionar</button>
-      </div>
-      <ul>
-        <li>
-          <div>
-            <input type="checkbox" name="tarefa_1" id="tarefa_1" />
-            <label for="tarefa_1">
-              <span>Front-end web</span>
-              <span>Construir um front-end sem estilo</span>
-            </label>
-          </div>
-        </li>
-        <li>
-          <div>
-            <input type="checkbox" name="tarefa_1" id="tarefa_1" />
-            <label for="tarefa_1">
-              <span>Montar estilo do Front-end web</span>
-              <span>Usar framewerk CSS para estilizar o front-end</span>
-            </label>
-          </div>
-        </li>
-      </ul>
+    <div class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans">
+      <div class="bg-white rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg">
+            <div class="mb-4">
+                <h1 class="text-grey-darkest">Lista de Tarefas</h1>
+                <div class="flex mt-4">
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker" placeholder="Add Todo">
+                    <button class="flex-no-shrink p-2 border-2 rounded text-teal border-teal hover:text-white hover:bg-teal">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="flex mb-4 items-center justify-between">
+                  <div class="flex items-center">
+                    <input type="checkbox" name="tarefa_1" id="tarefa_1">
+                    <label for="tarefa_1"><p class="w-full ml-4 text-grey-darkest">Tarefa 1</p></label>
+                  </div>
+                  <div class="flex items-center">
+                      <button class="flex-no-shrink p-2 ml-4 mr-2 border-2 rounded hover:text-green-500 hover:border-green-500 hover:bg-green">Feito</button>
+                      <button class="flex-no-shrink p-2 ml-2 border-2 rounded text-red border-red hover:text-white hover:bg-red-500">Remover</button>
+                  </div>
+                </div>
+                <div class="flex mb-4 items-center justify-between">
+                    <div class="flex items-center">
+                      <input type="checkbox" name="tarefa_2" id="tarefa_2">
+                      <label for="tarefa_2"><p class="w-full ml-4 line-through text-green">Tarefa 2</p></label>
+                    </div>
+                    <div class="flex items-center">
+                      <button class="flex-no-shrink p-2 ml-4 mr-2 border-2 rounded hover:text-green-500 hover:border-green-500 hover:bg-green">Feito</button>
+                      <button class="flex-no-shrink p-2 ml-2 border-2 rounded text-red border-red hover:text-white hover:bg-red-500">Remover</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </div>
   </body>
 </html>
